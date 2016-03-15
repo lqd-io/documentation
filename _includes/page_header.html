@@ -1,0 +1,10 @@
+<div class='page-header'>
+  <div class='container'>
+    <h1>
+      {{ page.title }}
+      {% if page.platform != 'API' and page.platform != 'Dashboard' %}
+        <span>v{{ page.version }}</span>
+      {% endif %}
+    </h1>
+  </div>
+</div>

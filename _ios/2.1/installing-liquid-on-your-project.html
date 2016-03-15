@@ -1,0 +1,29 @@
+
+<p>Installing Liquid SDK on your project is very easy. Pick one of the following methods:</p>
+
+{% include nav_tabs.html tabs=page.methods %}
+
+{% capture cocoapods_content %}
+  {% include_relative {{ page.version | append: '/sections/1-cocoapods.md' }} %}
+{% endcapture %}
+
+{% capture xcode_content %}
+  {% include_relative {{ page.version | append: '/sections/1-xcode.md' }} %}
+{% endcapture %}
+
+{% capture manual_content %}
+  {% include_relative {{ page.version | append: '/sections/1-manual.md' }} %}
+{% endcapture %}
+
+<div class='tab-content'>
+  <div class='tab-pane active' id='cocoapods'>
+    {{ cocoapods_content | markdownify }}
+  </div>
+  <div class='tab-pane' id='xcode'>
+    {{ xcode_content | markdownify }}
+  </div>
+  <div class='tab-pane' id='manual'>
+    {{ manual_content | markdownify }}
+  </div>
+</div>
+

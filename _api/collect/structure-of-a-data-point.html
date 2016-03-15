@@ -1,0 +1,17 @@
+
+{% capture structure %}
+
+A data point represents a *snapshot* of a device in a certain state, at the moment of an event generation (e.g.: when the user buys a product on their app).
+
+Each datapoint includes 4 entities (`User`, `Device`, `Event` and `Timestamp`):
+
+{% highlight json %}
+{
+  "user": {},
+  "device": {},
+  "event": {},
+  "timestamp": "2016-01-01T00:00:00.000+00:00"
+}
+{% endhighlight %}
+
+{% endcapture %} {{ structure | markdownify }}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    {% include head.html %}
+  </head>
+  <body data-spy='scroll' data-offset-top='261' data-target='.sidebar-nav'>
+    {% include navbar.html %}
+    {% include page_header.html %}
+    <div class='container-fluid page-context'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-6'>
+            <ol class='breadcrumb'>
+              <li><a href='{{ site.github.url }}/'>Documentation</a></li>
+              <li class='active'>{{ page.title }}</li>
+            </ol>
+          </div>
+          <div class='col-xs-12 col-sm-6 text-right'>
+            <div class='btn-group'>
+              <button type='button' data-toggle='dropdown' class='btn btn-default dropdown-toggle'>
+                {% if page.platform != 'API' and page.platform != 'Dashboard' %}
+                  <span>v{{ page.version }}&nbsp;</span>
+                {% else %}
+                  <span>{{ page.version }}&nbsp;</span>
+                {% endif %}
+                <span class='caret'></span>
+              </button>
+              <ul class='dropdown-menu pull-right'>
+                {% for document in site[page.collection] %}
+                  <li><a href='{{ site.github.url }}/{{ page.collection }}/{{ document.version }}/'>{{ document.version }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container page-content'>
+      <div class='row'>
+        <div class='col-xs-12 col-sm-4'>
+          <div data-spy='affix' data-offset-top='235' data-offset-bottom='25' class='hidden-print hidden-xs hidden-sm sidebar-column'>
+            <nav class='sidebar-nav'>
+              <h5>{{ page.subtitle }}</h5>
+              {% include sidebar.html param=page.navbar %}
+            </nav>
+            <div class='alert alert-warning alert-simple'>
+              <strong>Technical support</strong>
+              <p>Need help? Talk directly with our support team on our <a href='https://onliquid.com/contact' target='blank'>contact page</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-xs-12 col-sm-8'>
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

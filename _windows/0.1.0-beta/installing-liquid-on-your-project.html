@@ -1,0 +1,23 @@
+
+<p>Installing Liquid SDK on your project is very easy. Pick one of the following methods:</p>
+
+<ul class='nav nav-tabs'>
+  <li class='active'><a href='#nuget' data-toggle='tab'>NuGet</a></li>
+  <li><a href='#dll' data-toggle='tab'>As a Project Reference (DLL)</a></li>
+  <li><a href='#source' data-toggle='tab'>Including Liquid Project (Source Code)</a></li>
+</ul>
+
+<div class='tab-content'>
+  <div class='tab-pane active' id='nuget'>
+    {% capture nuget %}{% include_relative {{ page.version | append: '/sections/1-nuget.md' }} %}{% endcapture %}
+    {{ nuget | markdownify }}
+  </div>
+  <div class='tab-pane' id='dll'>
+    {% capture dll %}{% include_relative {{ page.version | append: '/sections/1-dll.md' }} %}{% endcapture %}
+    {{ dll | markdownify }}
+  </div>
+  <div class='tab-pane' id='source'>
+    {% capture source %}{% include_relative {{ page.version | append: '/sections/1-source.md' }} %}{% endcapture %}
+    {{ source | markdownify }}
+  </div>
+</div>

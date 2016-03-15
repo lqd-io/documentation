@@ -1,0 +1,33 @@
+page:
+  title: Liquid — Documentation
+  url: 'https://onliquid.com/docs'
+
+email: support@onliquid.com
+twitter_username: onliquid
+github_username: lqd-io
+
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      layout: show
+
+collections:
+  android:
+    output: true
+    permalink: /android/:path/
+  ios:
+    output: true
+    permalink: /ios/:path/
+  windows:
+    output: true
+    permalink: /windows/:path/
+  api:
+    output: true
+    permalink: /api/:path/
+  dashboard:
+    output: true
+    permalink: /dashboard/:path/

@@ -1,0 +1,14 @@
+<article class='documentation-article'>
+  <header>
+    <h2 id='{{ include.article.slug }}'>{{ include.article.title }}</h2>
+    {% capture article_header %}{{ page.version }}/{{ include.article.slug }}.html{% endcapture %}
+    {% include_relative {{ article_header }} %}
+  </header>
+  {% for section in include.article.subcategories %}
+    {% capture contents %}
+      {% capture article_body %}{{ page.version }}/sections/{{ include.index }}-{{ forloop.index }}-{{ section.slug }}.md{% endcapture %}
+      {% include_relative {{ article_body }} %}
+    {% endcapture %}
+    {% include section.html section=section content=contents %}
+  {% endfor %}
+</article>
