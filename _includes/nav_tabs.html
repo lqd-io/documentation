@@ -1,0 +1,11 @@
+<ul class='nav nav-tabs'>
+{% for value in include.tabs %}
+  {% if forloop.first %}
+    <li class='active'>
+  {% else %}
+    <li>
+  {% endif %}
+    <a href='#{{ value | downcase }}' data-toggle='tab'>{{ value }}</a>
+  </li>
+{% endfor %}
+</ul>

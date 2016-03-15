@@ -1,0 +1,81 @@
+---
+layout: default
+platform: Dashboard
+title: Liquid Documentation
+sections:
+  - title: SDK Integrations
+    desc: Step by step guides
+    items:
+      - name: Android
+        path: android
+      - name: iOS and watchOS
+        path: ios
+      - name: Windows
+        path: windows
+  - title: REST API
+    desc: Our beautiful APIs
+    items:
+      - name: Data Collection API
+        path: api/collect
+      - name: Data Analysis API
+        path: api/analyze
+  - title: Dashboard
+    desc: Tips and tricks
+    items:
+      - name: Push-Notifications
+        path: dashboard/push-notifications
+      - name: Formulas
+        path: dashboard/formulas
+---
+
+<div class='row'>
+  <div class='col-xs-12 col-sm-7'>
+  {% for section in page.sections %}
+    <div class='documentation-section'>
+      <h3>{{ section.title }}</h3>
+      <p class='text-muted small'>{{ section.desc }}</p>
+      <div class='row'>
+        {% if forloop.first %}
+          {% for item in section.items %}
+            <div class='col-xs-12 col-sm-4'>
+              {% for doc in site[item.path] %}
+                {% if forloop.last %}
+                  <a href='{{ site.github.url }}{{ doc.id }}' class='doc-anchor'>
+                    <img src='{{ site.github.url }}/assets/{{ item.path }}/icon@2x.png' height='75' width='120'/>
+                    <span>{{ doc.platform }}</span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endfor %}
+        {% else %}
+          {% for item in section.items %}
+            <div class='col-xs-12 col-sm-4'>
+              <a href='{{ site.github.url }}/{{ item.path }}' class='doc-anchor'>
+                <img src='{{ site.github.url }}/assets/{{ item.path }}/icon@2x.png' height='75' width='120'/>
+                <span>{{ item.name }}</span>
+              </a>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+  <div class='col-xs-12 col-sm-4 col-sm-offset-1'>
+    <nav class='sidebar-nav index-nav'>
+      <h5>I want to:</h5>
+      <ul class='nav'>
+        <li><a href='{{ site.github.url }}/ios/2.1/'>Integrate the iOS/watchOS SDK</a></li>
+        <li><a href='{{ site.github.url }}/android/2.0/'>Integrate the Android SDK</a></li>
+        <li><a href='{{ site.github.url }}/api/collect/'>Send data to the Collect API</a></li>
+        <li><a href='{{ site.github.url }}/api/analyze/'>Get data from the Analyze API</a></li>
+        <li><a href='{{ site.github.url }}/dashboard/push-notifications/'>Setup Push-Notifications</a></li>
+      </ul>
+    </nav>
+    <div class='alert alert-info alert-simple well-md'>
+      <h4>Need help?</h4>
+      <p>Feel free to <a href='https://onliquid.com/contact' target='new'>contact us</a> if you need any help getting started with our platform.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+
+{% capture data_collection_api %}
+
+Liquid offers a REST API for sending data to Liquid servers. This data is tipically sent from the official [iOS](https://github.com/lqd-io/liquid-sdk-ios), [Android](https://github.com/lqd-io/liquid-sdk-android) and [Windows](https://github.com/lqd-io/liquid-sdk-windows) SDKs, but as an open API it can also be used directly from backend or other type of clients.
+
+This REST API has two endpoints available and authentication is mandatory, in a per-app basis, by App key for the Data Collection API, e.g.: `vE_S7CluDfNVPx_UgWCpn-5CPszRCOjC`. This key is available in your app settings on Liquid dashboard.
+
+The available endpoints are:
+
+| POST | Resource info |
+| --- | --- |
+| [**/data_points**](#post-data-points) | Used to create a new data point. The structure of a data point is described [here](#structure-of-a-data-point). |
+| [**/aliases**](#post-aliases) | Used to create a new user alias, tipically called when a user changes its unique ID, e.g. when switching from an anonymous to an identified state. |
+
+{% endcapture %} {{ data_collection_api | markdownify }}

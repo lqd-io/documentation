@@ -1,0 +1,23 @@
+
+{% capture variables_content %}
+
+A ***Liquid Variable*** is a variable that holds a dynamic value which can change depending on rules that you define remotely on Liquid dashboard. You can transform any old-fashioned static variable into a ***Liquid Dynamic Variable*** just by replacing them with a Liquid method.
+
+As an example, assume that you want to turn a static background color that was used like:
+
+{% highlight swift %}
+ResourceLoader resourceLoader = new ResourceLoader();  
+resourceLoader.GetString("welcomeString");
+{% endhighlight %}
+
+into a dynamic background color. You just need to replace it with something like:
+
+{% highlight swift %}
+await Liquid.Instance.GetStringVariable("welcomeString", fallbackColor);
+{% endhighlight %}
+
+As soon as you compile your code and use this variable in your app, it will appear on your Liquid dashboard.
+
+[*Read our default Variables recommendations*](recommendations-defaultvariables)
+
+{% endcapture %} {{ variables_content | markdownify }}

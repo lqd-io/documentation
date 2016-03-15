@@ -1,0 +1,17 @@
+<div class='field'>
+  <div class='row'>
+    <div class='col-xs-12 col-sm-3'>
+      <h5>{{ include.key }}</h5>
+      <p>{{ include.type }}</p>
+    </div>
+    <div class='col-xs-12 col-sm-9'>
+      <p>{{ include.description | markdownify }}</p>
+      <p>
+        <strong>Example:</strong>
+        <br/>
+        {{ include.example | markdownify }}
+      </p>
+    </div>
+  </div>
+  <hr/>
+</div>

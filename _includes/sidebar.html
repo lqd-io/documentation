@@ -1,0 +1,10 @@
+<ul class='nav'>
+  {% for value in include.param %}
+    <li>
+      <a href='#{{ value.slug }}'>{{ value.title }}</a>
+      {% if value.subcategories %}
+        {% include sidebar.html param=value.subcategories %}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

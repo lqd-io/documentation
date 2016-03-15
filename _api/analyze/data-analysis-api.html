@@ -1,0 +1,14 @@
+
+{% capture data_analysis_api %}
+
+Liquid offers a REST API for reading aggregated data from Liquid servers, called Data Analysis API.
+
+This API has one endpoint available and authentication is mandatory using the app key, e.g.: `uDfNVSzRCOjgvlWCpn7CPx-UCEAA5CPs`. This key is available in your app settings on Liquid dashboard, and it's different from the Data Collection API key.
+
+The current available endpoint is:
+
+| GET | Resource info |
+| --- | --- |
+| [/users/:id](#get-users) | Used to obtain information about a user.
+
+{% endcapture %} {{ data_analysis_api | markdownify }}

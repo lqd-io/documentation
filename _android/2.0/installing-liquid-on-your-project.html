@@ -1,0 +1,28 @@
+
+<p>Installing Liquid SDK on your project is very easy. Pick one of the following methods:</p>
+
+{% include nav_tabs.html tabs=page.methods %}
+
+{% capture gradle_content %}
+  {% include_relative {{ page.version | append: '/sections/1-gradle.md' }} %}
+{% endcapture %}
+
+{% capture maven_content %}
+  {% include_relative {{ page.version | append: '/sections/1-maven.md' }} %}
+{% endcapture %}
+
+{% capture eclipse_content %}
+  {% include_relative {{ page.version | append: '/sections/1-eclipse.md' }} %}
+{% endcapture %}
+
+<div class='tab-content'>
+  <div class='tab-pane active' id='gradle'>
+    {{ gradle_content | markdownify }}
+  </div>
+  <div class='tab-pane' id='maven'>
+    {{ maven_content | markdownify }}
+  </div>
+  <div class='tab-pane' id='eclipse'>
+    {{ eclipse_content | markdownify }}
+  </div>
+</div>
