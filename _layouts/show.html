@@ -28,6 +28,8 @@
               <ul class='dropdown-menu pull-right'>
                 {% for document in site[page.collection] %}
                   <li><a href='{{ site.github.url }}/{{ page.collection }}/{{ document.version }}/'>{{ document.version }}</a></li>
+                  <!-- Link to old docs -->
+                  <li><a href="https://onliquid.com/docs/{{ page.collection }}">Prev. versions</a></li>
                 {% endfor %}
               </ul>
             </div>
