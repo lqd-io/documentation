@@ -1,11 +1,11 @@
 ---
 collection: dashboard
 platform: Dashboard
-title: Push-Notifications
+title: Push notifications
 subtitle: Configuring Push-Notifications
-version: Push-Notifications
+version: Push-notifications
 navbar:
-  - title: Push-Notifications
+  - title: Push notifications
     slug: push-notifications
 ---
 
