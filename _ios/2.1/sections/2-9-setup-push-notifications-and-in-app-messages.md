@@ -1,11 +1,11 @@
 
-To send Push Notifications to your users' devices through Liquid's segmentation feature you'll just need two things:
+To send push notifications and in-app messages to your users' through Liquid's formulas you'll just need three things:
 
-* Register for Push Notifications on Apple servers
+* Register for push notifications on Apple servers
 
 * Inform Liquid about each device's APNS (Apple Push Notification) key.
 
-This is done in your `didFinishLaunchingWithOptions:` (for the 1st step) and by calling `setApplePushNotificationToken:` method at the moment you have access to the key (for the 2nd step), like shown below:
+* Notify Liquid SDK to handle incoming push notifications
 
 {% highlight swift %}
 // AppDelegate.m
