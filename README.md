@@ -4,12 +4,16 @@ We use Jekyll to write and update our documentation articles.
 
 Quick-start instructions:
 
-```ruby
+```bash
 ~ $ gem install jekyll
 ~ $ cd project-folder
 ~/project-folder $ jekyll serve
 # => Now browse to http://localhost:4000
 ```
+
+### Deploying changes with GitHub Pages and Jekyll
+
+Push to the branch `gh-pages` to deploy your changes.
 
 ### Contributing
 
