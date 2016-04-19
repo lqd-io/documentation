@@ -8,9 +8,14 @@
   600: #3A98FC
 */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  position: relative;
+  margin-bottom: 47px;
 }
 
 a {
@@ -152,11 +157,15 @@ pre {
 
 .footer {
   background-color: #11456F;
+  bottom: 0;
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
   letter-spacing: 0.025em;
+  height: 47px;
   padding-bottom: 15px;
   padding-top: 15px;
+  position: absolute;
+  width: 100%;
 }
 
 /* Header */
