@@ -5,9 +5,10 @@ We use Jekyll to write and update our documentation articles.
 Quick-start instructions:
 
 ```bash
-~ $ gem install jekyll
-~ $ cd project-folder
-~/project-folder $ jekyll serve
+~ git clone git@github.com:lqd-io/documentation.git liquid_documentation
+~ cd /liquid_documentation
+~ $ bundle install
+~ $ jekyll serve
 # => Now browse to http://localhost:4000
 ```
 
