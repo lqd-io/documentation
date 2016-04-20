@@ -1,5 +1,5 @@
 
-#### Install via Xcode
+<h4 id='install-via-xcode'>Install via Xcode <a href="https://github.com/lqd-io/documentation/edit/gh-pages/_{{ page.collection }}/{{ page.version | downcase }}/sections/1-xcode.md" target="new" class="btn btn-xs btn-default btn-edit"><span class="fa fa-pencil"></span> Edit</a></h4>
 
 * Download/clone the latest version of Liquid SDK from <a href="https://github.com/lqd-io/liquid-sdk-ios" target="_blank">https://github.com/lqd-io/liquid-sdk-ios <sup class="fa fa-external-link small"></sup></a> in your project folder.
 

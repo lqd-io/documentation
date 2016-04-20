@@ -1,5 +1,5 @@
 
-#### Install via Eclipse
+<h4 id='install-via-eclipse'>Install via Eclipse <a href="https://github.com/lqd-io/documentation/edit/gh-pages/_{{ page.collection }}/{{ page.version | downcase }}/sections/1-eclipse.md" target="new" class="btn btn-xs btn-default btn-edit"><span class="fa fa-pencil"></span> Edit</a></h4>
 
 * Download/clone the SDK from <a href='https://github.com/lqd-io/liquid-sdk-android' target='new'>https://github.com/lqd-io/liquid-sdk-android <sup class='fa fa-external-link small'></sup></a>
 

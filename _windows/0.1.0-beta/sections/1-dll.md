@@ -1,5 +1,5 @@
 
-#### Install as a Project Reference (DLL)
+<h4 id='install-as-a-project-reference-dll'>Install as a Project Reference (DLL) <a href="https://github.com/lqd-io/documentation/edit/gh-pages/_{{ page.collection }}/{{ page.version | downcase }}/sections/1-dll.md" target="new" class="btn btn-xs btn-default btn-edit"><span class="fa fa-pencil"></span> Edit</a></h4>
 
 To install the Liquid SDK adding the libraries as references, you will need to download them from the Liquid website and add the library for a Windows Phone or Windows Store project in each of the specific projects as a reference.
 

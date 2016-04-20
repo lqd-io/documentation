@@ -32,6 +32,32 @@ a:focus {
   outline: none;
 }
 
+a.btn-edit {
+  border-color: #E3F2FD;
+  border-radius: 3px;
+  color: #3A98FC;
+  font-weight: 700;
+  float: right;
+  padding: 2px 6px;
+}
+
+a.btn-edit:hover,
+a.btn-edit:active,
+a.btn-edit:focus,
+a.btn-edit:visited,
+a.btn-edit:active:focus,
+a.btn-edit:active:hover {
+  background-color: #F8FBFE;
+  border-color: #E3F2FD;
+  box-shadow: none;
+  color: #3A98FC;
+}
+
+.btn-edit .fa-pencil {
+  font-size: 11px;
+  margin-right: 2px;
+}
+
 h2,
 h3,
 h4,
@@ -324,6 +350,10 @@ pre {
 
 .tab-pane ul li {
   padding: 5px 0;
+}
+
+.tab-pane h4 {
+  margin-bottom: 25px;
 }
 
 .documentation-article ul li p {

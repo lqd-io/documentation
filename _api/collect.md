@@ -27,7 +27,7 @@ navbar:
   {% assign loop = forloop.index %}
   <article class='documentation-article'>
     <header>
-      <h2 id='{{ article.slug }}'>{{ article.title }}</h2>
+      <h2 id='{{ article.slug }}'>{{ article.title }} <a href="https://github.com/lqd-io/documentation/edit/gh-pages/_{{ page.collection }}/{{ page.version | downcase }}/{{ article.slug }}.html" target="new" class="btn btn-xs btn-default btn-edit"><span class="fa fa-pencil"></span> Edit</a></h2>
       {% capture article_header %}{{ page.version | downcase }}/{{ article.slug }}.html{% endcapture %}
       {% include_relative {{ article_header }} %}
     </header>
@@ -38,7 +38,7 @@ navbar:
       {% endcapture %}
       <section>
         <header>
-          <h3 id='{{ section.slug }}'>{{ section.title }}</h3>
+          <h3 id='{{ section.slug }}'>{{ section.title }} <a href="https://github.com/lqd-io/documentation/edit/gh-pages/_{{ page.collection }}/{{ page.version | downcase }}/sections/{{ loop }}-{{ forloop.index }}-{{ section.slug }}.md" target="new" class="btn btn-xs btn-default btn-edit"><span class="fa fa-pencil"></span> Edit</a></h3>
         </header>
         {{ contents | markdownify }}
       </section>

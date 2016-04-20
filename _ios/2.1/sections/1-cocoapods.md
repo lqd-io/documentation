@@ -1,5 +1,5 @@
 
-#### Install via CocoaPods
+<h4 id='install-via-cocoapods'>Install via CocoaPods <a href="https://github.com/lqd-io/documentation/edit/gh-pages/_{{ page.collection }}/{{ page.version | downcase }}/sections/1-cocoapods.md" target="new" class="btn btn-xs btn-default btn-edit"><span class="fa fa-pencil"></span> Edit</a></h4>
 
 * Install <a href='http://cocoapods.org/' target='_blank'>CocoaPods <sup class='fa fa-external-link small'></sup></a> in your system.
 * Open your **Xcode** project folder and create a file called `Podfile` with the following content: `pod 'Liquid'`.
