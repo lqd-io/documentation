@@ -1,4 +1,5 @@
 ---
+redirect_from: /api/
 collection: api
 platform: API
 title: Data Collection API

@@ -8,6 +8,9 @@ github_username: lqd-io
 
 markdown: kramdown
 
+gems:
+  - jekyll-redirect-from
+
 defaults:
   -
     scope:
