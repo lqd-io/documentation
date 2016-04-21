@@ -24,8 +24,6 @@ To send push notifications and in-app messages to your users' through Liquid's f
 }
 {% endhighlight %}
 
-Configure APNS Certificate
+#### Configure APNS Certificate
 
-To send Push Notifications as your App, Liquid must authenticate with Apple's Push Notification Service (APNS) using your App's certificate.
-
-Check our [Push Notifications Documentation](/documentation/dashboard#import-apns-cert) to learn how to set it up on Liquid dashboard.
+To send Push Notifications as your App, Liquid must authenticate with Apple's Push Notification Service (APNS) using your App's certificate. Check the [Setup push notifications certificates](#setup-push-notifications-certificates) section to learn how to set it up on Liquid dashboard.
