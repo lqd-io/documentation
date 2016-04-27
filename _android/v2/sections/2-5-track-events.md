@@ -9,3 +9,7 @@ You can track an event anytime you want on your code, using one of the following
 Liquid.getInstance().track("Click Profile Page");
 Liquid.getInstance().track("Buy Product", attrs);
 {% endhighlight %}
+
+##### Track your Monetization metrics
+
+In order to take advantage of the Monetization section of the Dashboard view, you have to send a `price` attribute on your events, make sure to check the [Monetization settings](#monetization-settings) section for detailed information.

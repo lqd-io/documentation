@@ -9,3 +9,7 @@ You can track an event anytime you want on your code, using one of the following
 [[Liquid sharedInstance] track:@"Click Profile Page"];
 [[Liquid sharedInstance] track:@"Buy Product" attributes: @{ @"productId": 123 }];
 {% endhighlight %}
+
+##### Track your Monetization metrics
+
+In order to take advantage of the Monetization section of the Dashboard view, you have to send a `price` attribute on your events, make sure to check the [Monetization settings](#monetization-settings) section for detailed information.
