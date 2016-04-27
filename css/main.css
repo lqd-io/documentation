@@ -104,6 +104,11 @@ pre {
   margin-bottom: 25px;
 }
 
+ul {
+  display: inline-block;
+  width: 100%;
+}
+
 .alert-info,
 .alert-warning {
   border: none;
