@@ -19,7 +19,7 @@ Returns aggregated data about a user. It contains three keys:
 
 | Header | Example | Notes |
 | --- | --- | --- |
-| Authorization | `Token vE_S7CluDfNVPx_UgWCpn-5CPszRCOjC` | The app API key, available at the App settings on Liquid dashboard.
+| Authorization | `Token [your_api_key]` | The app API key, available at the App settings on Liquid dashboard.
 | Accept | `application/vnd.lqd.v1+json` | Optionally, you can use `application/json` if you don't care about which api version you are using, notice future changes may break you code if you do this. |
 | Content-Type | `application/json` | |
 
