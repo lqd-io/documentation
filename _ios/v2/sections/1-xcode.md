@@ -18,4 +18,4 @@
 
 * Search for **User Header Search Paths** and add `$(SRCROOT)/liquid-sdk-ios/Liquid` (recursive). If you store Liquid SDK into another path, you should adapt that path to your situation.
 
-* Search for **Other Linker Flags** and add `$(inherited) -ObjC -all_load`.
+* Search for **Other Linker Flags** and add `$(inherited) -ObjC -all_load -licucore`.
