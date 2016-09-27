@@ -25,7 +25,9 @@
                 {% for document in site[page.collection] %}
                   <li><a href='{{ site.github.url }}/{{ page.collection }}/{{ document.version }}/'>{{ document.version }}</a></li>
                   <!-- Link to old docs -->
-                  <li><a href="https://onliquid.com/docs/{{ page.collection }}">Prev. versions</a></li>
+                  {% if page.platform != 'API' and page.platform != 'Dashboard' %}
+                    <li><a href="https://onliquid.com/docs/{{ page.collection }}">Prev. versions</a></li>
+                  {% endif %}
                 {% endfor %}
               </ul>
             </div>
